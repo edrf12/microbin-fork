@@ -7,11 +7,11 @@
 
 <div style="text-align: center; padding: 3rem;">
   {% if pasta.pasta_type == "url" %}
-  <a href="{{ args.short_path_as_str() }}/url/{{pasta.id_as_animals()}}">
+  <a href="{{ args.short_path_as_str() }}/u/{{pasta.id_as_animals()}}">
     {{qr}}
   </a>
   {% else %}
-  <a href="{{ args.short_path_as_str() }}/upload/{{pasta.id_as_animals()}}">
+  <a href="{{ args.short_path_as_str() }}/p/{{pasta.id_as_animals()}}">
     {{qr}}
   </a>
   {% endif %}
